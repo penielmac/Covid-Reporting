@@ -1,0 +1,26 @@
+{
+	"name": "ds_population_raw_gz",
+	"properties": {
+		"description": "population dataset zip file, uploaded already to the blob storage. \nnow converting to Delimited Text file",
+		"linkedServiceName": {
+			"referenceName": "ls_blob_covidreportingsa",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "population_by_age.tsv.gz",
+				"container": "population"
+			},
+			"columnDelimiter": "\t",
+			"compressionCodec": "gzip",
+			"compressionLevel": "Optimal",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": []
+	}
+}
