@@ -14,7 +14,6 @@
 				"fileSystem": "raw"
 			},
 			"columnDelimiter": "\t",
-			"compressionCodec": "tar",
 			"escapeChar": "\\",
 			"firstRowAsHeader": true,
 			"quoteChar": "\""
