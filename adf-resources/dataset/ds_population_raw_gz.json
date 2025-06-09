@@ -1,5 +1,5 @@
 {
-	"name": "ds_population_raw_gz22",
+	"name": "ds_population_raw_gz",
 	"properties": {
 		"description": "population dataset zip file, uploaded already to the blob storage. \nnow converting to Delimited Text file",
 		"linkedServiceName": {
